@@ -219,8 +219,10 @@
       timing_response: 1000
     };
     var result_block = {
-      type: "text",
-      text: [result]
+      type: "single-stim",
+      stimuli: [result],
+      is_html: true,
+      timing_response: 3000,
     };
     var training_chunk = {
       chunk_type: 'linear',
@@ -256,8 +258,10 @@
     };
 
     var result1_block = {
-      type: "text",
-      text: [result1]
+      type: "single-stim",
+      stimuli: [result1],
+      is_html: true,
+      timing_response: 3000,
     };
 
     var run1_chunk = {
@@ -409,7 +413,7 @@
       chunk_type: 'while',
       timeline: [count1_block, return_question_block, negativity_block, cross_block],
       continue_function: function(){
-        if (run1_count > 0){
+        if (run1_count > 38){
           return false;
         }
         else{

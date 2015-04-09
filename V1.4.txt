@@ -1,0 +1,3 @@
+V1.4
+
+- Added time limit display of actual statistics rather than Press enter
